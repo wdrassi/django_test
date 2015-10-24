@@ -19,6 +19,7 @@ class BookList(ListView):
         return cont
 
 class BookCreate(CreateView):
+    print "test"
     model = Book
     fields = ['name', 'pages']
     success_url = reverse_lazy('books_cbv:book_list')
