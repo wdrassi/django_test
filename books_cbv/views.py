@@ -25,6 +25,7 @@ class BookCreate(CreateView):
 
 class BookUpdate(UpdateView):
     model = Book
+    # model = Book
     fields = ['name', 'pages']
     success_url = reverse_lazy('books_cbv:book_list')
 
